@@ -8,7 +8,7 @@ For example with :
 
 ## 2. Convert your shellcode
 
-Use this homemade [converter](./convert.sh) to get your asm shellcode.
+Use this homemade [converter_1](./convert.sh) or [converter_2](./convert2.sh) to get your asm shellcode.
 
 
 ## 3. Put your shellcode in your .asm code
