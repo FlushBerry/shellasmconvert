@@ -26,6 +26,8 @@ See this example of [ASM File](./example.asm).
 
 ## 4. Compile your ASM
 
-On windows you can use this compiler [script](./cimpiler.bat)
+On windows you can use this compiler [script](./compiler.bat)
 
 ## 5. Run
+
+One example with a loader + reverse shell code : [here](./reverse.asm)
